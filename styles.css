@@ -158,48 +158,70 @@ o efeito se tiver a classe botao_secundario  */
   margin: 1em 0;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 700px) {
   .container {
-    grid-template-columns: 100%; /* Uma coluna em telas menores que 1020px */
-    height: auto; /* Altura automática para ajustar ao conteúdo */
+    grid-template-columns: 1fr; /* Uma coluna em telas menores que 767px */
     width: auto;
+    height: auto;
+    text-align: center;
   }
 
-
-
+  .container__caixa {
+    margin-left: 50px;
+  }
   .container__background {
     order: -1; /* Move o fundo para o topo */
-    margin-bottom: 1em;
     height: 200px; /* Altura do fundo em telas menores */
   }
 
-  .container__imagem{
-    width: 356px;
-  }
-
-  .container__botao {
-    width: 356px; /* Botões ocupando toda a largura do container pai */
-  }
-
   .secundario {
-    margin: 0 5%; /* Reduz a margem para melhorar o espaçamento em telas menores */
+    flex-direction: column;
+    margin: 0 auto;
   }
 
   .secundario__imagem {
-    width: 100%; /* Imagem ocupando toda a largura do container pai */
+    width: 80%; /*Imagem ocupando toda a largura do container pai */
+    margin: 0 auto;
   }
 
-  .descricao__titulo {
-    font-size: 36px; /* Reduz o tamanho do título secundário */
+  .container__descricao {
+    width: 85%;
+    margin: auto 0;
+    padding: 1em;
   }
 
-  .dispositivos__lista li {
-    width: 100%; /* Cada item ocupa a largura total em telas menores */
+  .descricao__texto {
+    font-size: 24px;
+    margin: 2em auto;
+    width: 80%;
   }
 
-  .rodape__lista{
-    display: block;
+  .order1 {
+    order: 2;
+    font-size: 24px;
+  }
+  .order2 {
+    order: 1;
+    width: 80%;
+  }
+
+  .secundario__botao{
+    width: 50%;
+  }
+
+  .dispositivos {
+    width: 100%;
+  }
+
+  .dispositivos__titulo {
+    width: 85%;
+    margin-left: 1em;
+    font-size: 36px;
+  }
+
+  .dispositivos__lista {
+    flex-direction: column; /* Lista de dispositivos empilhados verticalmente */
+    margin: 3em 0;
+    margin-left: 1em;
   }
 }
-
-
