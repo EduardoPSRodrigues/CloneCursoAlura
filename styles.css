@@ -167,7 +167,7 @@ o efeito se tiver a classe botao_secundario  */
   }
 
   .container__caixa {
-    margin-left: 50px;
+    margin-left: 40px;
   }
   .container__background {
     order: -1; /* Move o fundo para o topo */
@@ -180,12 +180,12 @@ o efeito se tiver a classe botao_secundario  */
   }
 
   .secundario__imagem {
-    width: 80%; /*Imagem ocupando toda a largura do container pai */
+    width: 100%; /*Imagem ocupando toda a largura do container pai */
     margin: 0 auto;
   }
 
   .container__descricao {
-    width: 85%;
+    width: 100%;
     margin: auto 0;
     padding: 1em;
   }
@@ -193,7 +193,7 @@ o efeito se tiver a classe botao_secundario  */
   .descricao__texto {
     font-size: 24px;
     margin: 2em auto;
-    width: 80%;
+    width: 100%;
   }
 
   .order1 {
@@ -202,7 +202,7 @@ o efeito se tiver a classe botao_secundario  */
   }
   .order2 {
     order: 1;
-    width: 80%;
+    width: 100%;
   }
 
   .secundario__botao{
@@ -223,5 +223,9 @@ o efeito se tiver a classe botao_secundario  */
     flex-direction: column; /* Lista de dispositivos empilhados verticalmente */
     margin: 3em 0;
     margin-left: 1em;
+  }
+
+  .rodape {
+    width: 100%;
   }
 }
