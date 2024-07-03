@@ -157,3 +157,49 @@ o efeito se tiver a classe botao_secundario  */
   font-size: 14px;
   margin: 1em 0;
 }
+
+@media only screen and (max-width: 1020px) {
+  .container {
+    grid-template-columns: 100%; /* Uma coluna em telas menores que 1020px */
+    height: auto; /* Altura automática para ajustar ao conteúdo */
+    width: auto;
+  }
+
+
+
+  .container__background {
+    order: -1; /* Move o fundo para o topo */
+    margin-bottom: 1em;
+    height: 200px; /* Altura do fundo em telas menores */
+  }
+
+  .container__imagem{
+    width: 356px;
+  }
+
+  .container__botao {
+    width: 356px; /* Botões ocupando toda a largura do container pai */
+  }
+
+  .secundario {
+    margin: 0 5%; /* Reduz a margem para melhorar o espaçamento em telas menores */
+  }
+
+  .secundario__imagem {
+    width: 100%; /* Imagem ocupando toda a largura do container pai */
+  }
+
+  .descricao__titulo {
+    font-size: 36px; /* Reduz o tamanho do título secundário */
+  }
+
+  .dispositivos__lista li {
+    width: 100%; /* Cada item ocupa a largura total em telas menores */
+  }
+
+  .rodape__lista{
+    display: block;
+  }
+}
+
+
