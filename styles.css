@@ -159,6 +159,10 @@ o efeito se tiver a classe botao_secundario  */
 }
 
 @media only screen and (max-width: 700px) {
+  .margem-centralizada{
+    margin: 0 auto;
+  }
+
   .container {
     grid-template-columns: 1fr; /* Uma coluna em telas menores que 767px */
     width: auto;
