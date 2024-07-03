@@ -4,6 +4,7 @@
   --botao-azul: #167bf7;
   --cor-de-fundo: #00030c;
   --fonte-principal: "Inter";
+  --botao-azul-efeito: #3c92fa;
 }
 
 body {
@@ -46,6 +47,13 @@ body {
 .botao_secundario {
   background-color: transparent;
   border: 2px, solid var(--branco-principal);
+}
+
+/* Adiciona o efeito hover no container__botao, mas não aplica
+o efeito se tiver a classe botao_secundario  */
+.container__botao:not(.botao_secundario):hover {
+  background-color: var(--botao-azul-efeito);
+  color: var(--cor-de-fundo);
 }
 
 .container__aviso {
@@ -121,7 +129,7 @@ body {
   color: var(--branco-principal);
   text-align: center;
   font-size: 16px;
-  margin: 5em 3em;
+  padding: 20px;
 }
 
 .rodape__lista {
@@ -141,6 +149,7 @@ body {
 
 .lista__link a:hover {
   text-decoration: underline;
+  color: var(--botao-azul);
 }
 
 .rodape__texto {
